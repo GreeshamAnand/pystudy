@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+luxalgo_chart.png
+.venv/
+.env
