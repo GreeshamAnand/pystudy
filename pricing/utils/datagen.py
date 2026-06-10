@@ -339,6 +339,10 @@ def simulate_two_sided(
             "is_peak": is_peak.astype(int),
             "demand_intensity": demand_intensity.round(3),  # confounder proxy
             "surge": surge.round(3),
+            # Continuous demand index (the latent utility). Linear in surge, so
+            # causal estimators can recover true_cate exactly -- the binary
+            # `booked` is its thresholded version for realism.
+            "booking_propensity": utility.round(4),
             "booked": booked,
             "true_cate": true_cate.round(4),
         }
@@ -355,7 +359,7 @@ def simulate_two_sided(
         ],
         "confounder_col": "demand_intensity",
         "treatment_col": "surge",
-        "outcome_col": "booked",
+        "outcome_col": "booking_propensity",
     }
     return df, ground_truth
 
