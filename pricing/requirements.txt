@@ -1,0 +1,16 @@
+# Pricing data-science track dependencies.
+# Core DS / ML
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Econometrics / causal
+statsmodels
+linearmodels        # IV2SLS instrumental variables
+dowhy               # causal graph: identify -> estimate -> refute
+econml              # heterogeneous treatment effects (DML, causal forests)
+
+# Real data access (optional; notebooks degrade gracefully without it)
+kagglehub

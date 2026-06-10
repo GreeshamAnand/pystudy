@@ -1,0 +1,8 @@
+# Downloaded datasets (keep the folder, ignore its contents)
+pricing/data/*
+!pricing/data/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
