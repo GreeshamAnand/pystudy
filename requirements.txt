@@ -47,3 +47,18 @@ wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
 zipp==3.1.0
+
+# --- Pricing data-science track (pricing/) ---
+# Core DS / ML
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+# Econometrics / causal
+statsmodels
+linearmodels        # IV2SLS instrumental variables
+dowhy               # causal graph: identify -> estimate -> refute
+econml              # heterogeneous treatment effects (DML, causal forests)
+# Optional real-data access (notebooks degrade gracefully without it)
+kagglehub
